@@ -53,7 +53,7 @@ This script can be integrated into Nagios for monitoring and alerting purposes. 
         use generic-service
         host_name your_target_host
         service_description Veeam Media Pool
-        check_command check_ncpa!-M 'plugins/veeam_media_pool.ps1' -a "-poolName 'YourPoolName' -warningThreshold 10 -criticalThreshold 5"
+        check_command check_ncpa!-M 'plugins/veeam_media_pool.ps1' -a '-poolName "YourPoolName" -warningThreshold 10 -criticalThreshold 5'
     }
     ```
 
